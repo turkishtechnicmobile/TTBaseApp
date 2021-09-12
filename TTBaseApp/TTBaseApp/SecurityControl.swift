@@ -1,6 +1,6 @@
 //
 //  SecurityControl.swift
-//  NMBaseApp
+//  TTBaseApp
 //
 //  Created by MnzfM on 12.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.

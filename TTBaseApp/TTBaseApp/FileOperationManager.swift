@@ -1,6 +1,6 @@
 //
 //  FileOperationManager.swift
-//  NMBaseApp
+//  TTBaseApp
 //
 //  Created by Remzi YILDIRIM on 17.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.

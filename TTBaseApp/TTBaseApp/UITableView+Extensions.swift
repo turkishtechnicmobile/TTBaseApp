@@ -1,6 +1,6 @@
 //
 //  UITableView+Extensions.swift
-//  NMBaseApp
+//  TTBaseApp
 //
 //  Created by MnzfM on 26.01.2021.
 //  Copyright © 2021 Turkish Technic. All rights reserved.

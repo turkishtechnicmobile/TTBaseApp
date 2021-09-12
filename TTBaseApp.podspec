@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = 'TTBaseApp'
-  spec.version      = '0.0.1'
+  spec.version      = '0.0.2'
   spec.authors      = { 
     'Hasan KACAR' => 'hasankacar@thy.com'
   }

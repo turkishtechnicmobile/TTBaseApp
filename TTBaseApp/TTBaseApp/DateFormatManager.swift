@@ -1,6 +1,6 @@
 //
 //  DateFormatManager.swift
-//  NMBaseApp
+//  TTBaseApp
 //
 //  Created by Remzi YILDIRIM on 12.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.

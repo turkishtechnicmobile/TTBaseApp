@@ -1,6 +1,6 @@
 //
 //  ConstantManager.swift
-//  NMBaseApp
+//  TTBaseApp
 //
 //  Created by MnzfM on 1.04.2021.
 //  Copyright © 2021 Turkish Technic. All rights reserved.

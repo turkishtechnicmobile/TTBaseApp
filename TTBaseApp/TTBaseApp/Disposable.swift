@@ -1,6 +1,6 @@
 //
 //  Disposable.swift
-//  NMBaseApp
+//  TTBaseApp
 //
 //  Created by Remzi YILDIRIM on 27.05.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.

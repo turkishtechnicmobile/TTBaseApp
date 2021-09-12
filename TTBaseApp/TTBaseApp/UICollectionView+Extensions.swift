@@ -1,6 +1,6 @@
 //
 //  UICollectionView+Extensions.swift
-//  NMBaseApp
+//  TTBaseApp
 //
 //  Created by Nazif MASMANACI on 24.05.2021.
 //  Copyright © 2021 Turkish Technic. All rights reserved.

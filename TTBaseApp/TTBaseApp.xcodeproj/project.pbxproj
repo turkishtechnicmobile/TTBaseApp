@@ -8,14 +8,46 @@
 
 /* Begin PBXBuildFile section */
 		B987B2C926EBA49C004291E5 /* TTBaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = B987B2C726EBA49C004291E5 /* TTBaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B987B2D026EBA4EC004291E5 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = B987B2CF26EBA4EC004291E5 /* Base */; };
+		B9D5AE2B26EDA46500BF10AA /* CommitConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE2A26EDA46500BF10AA /* CommitConfiguration.swift */; };
+		B9D5AE2D26EDA47300BF10AA /* SecurityControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE2C26EDA47300BF10AA /* SecurityControl.swift */; };
+		B9D5AE3426EDA4AF00BF10AA /* Dynamicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE3026EDA4AF00BF10AA /* Dynamicable.swift */; };
+		B9D5AE3526EDA4AF00BF10AA /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE3126EDA4AF00BF10AA /* Dynamic.swift */; };
+		B9D5AE3626EDA4AF00BF10AA /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE3226EDA4AF00BF10AA /* Disposable.swift */; };
+		B9D5AE3726EDA4AF00BF10AA /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE3326EDA4AF00BF10AA /* Dependency.swift */; };
+		B9D5AE4426EDA4F800BF10AA /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4226EDA4F800BF10AA /* NSObject+Extensions.swift */; };
+		B9D5AE4526EDA4F800BF10AA /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4326EDA4F800BF10AA /* UICollectionView+Extensions.swift */; };
+		B9D5AE4626EDA4F800BF10AA /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4126EDA4F800BF10AA /* UITableView+Extensions.swift */; };
+		B9D5AE4C26EDA50500BF10AA /* FileOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4826EDA50400BF10AA /* FileOperationManager.swift */; };
+		B9D5AE4D26EDA50500BF10AA /* ConstantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4926EDA50400BF10AA /* ConstantManager.swift */; };
+		B9D5AE4E26EDA50500BF10AA /* DateFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4B26EDA50500BF10AA /* DateFormatManager.swift */; };
+		B9D5AE4F26EDA50500BF10AA /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4A26EDA50500BF10AA /* PersistentManager.swift */; };
+		B9D5AE5026EDA50500BF10AA /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4726EDA50400BF10AA /* DownloadManager.swift */; };
+		B9D5AE5426EDA51000BF10AA /* ConfirmationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE5326EDA51000BF10AA /* ConfirmationAlert.swift */; };
+		B9D5AE5526EDA51000BF10AA /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE5226EDA51000BF10AA /* Localizable.swift */; };
+		B9D5AE5626EDA51000BF10AA /* DepartmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE5126EDA51000BF10AA /* DepartmentType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B987B2C426EBA49C004291E5 /* TTBaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTBaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B987B2C726EBA49C004291E5 /* TTBaseApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTBaseApp.h; sourceTree = "<group>"; };
 		B987B2C826EBA49C004291E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B987B2CF26EBA4EC004291E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Base; sourceTree = "<group>"; };
+		B9D5AE2A26EDA46500BF10AA /* CommitConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitConfiguration.swift; sourceTree = "<group>"; };
+		B9D5AE2C26EDA47300BF10AA /* SecurityControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityControl.swift; sourceTree = "<group>"; };
+		B9D5AE3026EDA4AF00BF10AA /* Dynamicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamicable.swift; sourceTree = "<group>"; };
+		B9D5AE3126EDA4AF00BF10AA /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		B9D5AE3226EDA4AF00BF10AA /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
+		B9D5AE3326EDA4AF00BF10AA /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		B9D5AE4126EDA4F800BF10AA /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
+		B9D5AE4226EDA4F800BF10AA /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
+		B9D5AE4326EDA4F800BF10AA /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
+		B9D5AE4726EDA50400BF10AA /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
+		B9D5AE4826EDA50400BF10AA /* FileOperationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperationManager.swift; sourceTree = "<group>"; };
+		B9D5AE4926EDA50400BF10AA /* ConstantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantManager.swift; sourceTree = "<group>"; };
+		B9D5AE4A26EDA50500BF10AA /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
+		B9D5AE4B26EDA50500BF10AA /* DateFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatManager.swift; sourceTree = "<group>"; };
+		B9D5AE5126EDA51000BF10AA /* DepartmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentType.swift; sourceTree = "<group>"; };
+		B9D5AE5226EDA51000BF10AA /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
+		B9D5AE5326EDA51000BF10AA /* ConfirmationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,11 +80,67 @@
 		B987B2C626EBA49C004291E5 /* TTBaseApp */ = {
 			isa = PBXGroup;
 			children = (
-				B987B2CF26EBA4EC004291E5 /* Base */,
+				B9D5AE3A26EDA4DD00BF10AA /* Others */,
+				B9D5AE3926EDA4D200BF10AA /* Manager */,
+				B9D5AE3826EDA4CA00BF10AA /* Extensions */,
+				B9D5AE2F26EDA4A300BF10AA /* Dynamic */,
+				B9D5AE2E26EDA47D00BF10AA /* ControlProcess */,
+				B9D5AE2A26EDA46500BF10AA /* CommitConfiguration.swift */,
 				B987B2C726EBA49C004291E5 /* TTBaseApp.h */,
 				B987B2C826EBA49C004291E5 /* Info.plist */,
 			);
 			path = TTBaseApp;
+			sourceTree = "<group>";
+		};
+		B9D5AE2E26EDA47D00BF10AA /* ControlProcess */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5AE2C26EDA47300BF10AA /* SecurityControl.swift */,
+			);
+			name = ControlProcess;
+			sourceTree = "<group>";
+		};
+		B9D5AE2F26EDA4A300BF10AA /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5AE3226EDA4AF00BF10AA /* Disposable.swift */,
+				B9D5AE3126EDA4AF00BF10AA /* Dynamic.swift */,
+				B9D5AE3026EDA4AF00BF10AA /* Dynamicable.swift */,
+				B9D5AE3326EDA4AF00BF10AA /* Dependency.swift */,
+			);
+			name = Dynamic;
+			sourceTree = "<group>";
+		};
+		B9D5AE3826EDA4CA00BF10AA /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5AE4226EDA4F800BF10AA /* NSObject+Extensions.swift */,
+				B9D5AE4326EDA4F800BF10AA /* UICollectionView+Extensions.swift */,
+				B9D5AE4126EDA4F800BF10AA /* UITableView+Extensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B9D5AE3926EDA4D200BF10AA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5AE4926EDA50400BF10AA /* ConstantManager.swift */,
+				B9D5AE4B26EDA50500BF10AA /* DateFormatManager.swift */,
+				B9D5AE4726EDA50400BF10AA /* DownloadManager.swift */,
+				B9D5AE4826EDA50400BF10AA /* FileOperationManager.swift */,
+				B9D5AE4A26EDA50500BF10AA /* PersistentManager.swift */,
+			);
+			name = Manager;
+			sourceTree = "<group>";
+		};
+		B9D5AE3A26EDA4DD00BF10AA /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				B9D5AE5326EDA51000BF10AA /* ConfirmationAlert.swift */,
+				B9D5AE5126EDA51000BF10AA /* DepartmentType.swift */,
+				B9D5AE5226EDA51000BF10AA /* Localizable.swift */,
+			);
+			name = Others;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +211,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B987B2D026EBA4EC004291E5 /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +221,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B9D5AE5426EDA51000BF10AA /* ConfirmationAlert.swift in Sources */,
+				B9D5AE4626EDA4F800BF10AA /* UITableView+Extensions.swift in Sources */,
+				B9D5AE3726EDA4AF00BF10AA /* Dependency.swift in Sources */,
+				B9D5AE2B26EDA46500BF10AA /* CommitConfiguration.swift in Sources */,
+				B9D5AE4C26EDA50500BF10AA /* FileOperationManager.swift in Sources */,
+				B9D5AE5626EDA51000BF10AA /* DepartmentType.swift in Sources */,
+				B9D5AE4E26EDA50500BF10AA /* DateFormatManager.swift in Sources */,
+				B9D5AE4426EDA4F800BF10AA /* NSObject+Extensions.swift in Sources */,
+				B9D5AE3526EDA4AF00BF10AA /* Dynamic.swift in Sources */,
+				B9D5AE4526EDA4F800BF10AA /* UICollectionView+Extensions.swift in Sources */,
+				B9D5AE4D26EDA50500BF10AA /* ConstantManager.swift in Sources */,
+				B9D5AE3626EDA4AF00BF10AA /* Disposable.swift in Sources */,
+				B9D5AE3426EDA4AF00BF10AA /* Dynamicable.swift in Sources */,
+				B9D5AE2D26EDA47300BF10AA /* SecurityControl.swift in Sources */,
+				B9D5AE4F26EDA50500BF10AA /* PersistentManager.swift in Sources */,
+				B9D5AE5526EDA51000BF10AA /* Localizable.swift in Sources */,
+				B9D5AE5026EDA50500BF10AA /* DownloadManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +382,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thy.TTBaseApp;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -304,7 +408,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.0.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thy.TTBaseApp;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
