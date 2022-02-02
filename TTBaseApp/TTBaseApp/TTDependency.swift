@@ -1,6 +1,6 @@
 //
 //  Dependency.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 13.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Dependency {
+public struct TTDependency {
     static private var factories: [ObjectIdentifier : () -> Any] = [:]
     
     public static func register<T>(_ type: T.Type, _ factory: @autoclosure @escaping () -> T) {
@@ -34,7 +34,7 @@ public struct Dependency {
 public struct Inject<Value> {
     public var wrappedValue: Value {
         get {
-            return Dependency.resolve()
+            return TTDependency.resolve()
         }
     }
     public init() {}

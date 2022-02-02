@@ -1,6 +1,6 @@
 //
 //  DownloadManager.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 17.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -13,10 +13,10 @@ public protocol Download: AnyObject {
     func startDownload(for urlString: String)
 }
 
-public class DownloadManager: NSObject, Download {
+public class TTDownloadManager: NSObject, Download {
     
-    public static let shared = DownloadManager()
-    @Inject var fileOperation: FileOperation
+    public static let shared = TTDownloadManager()
+    @Inject var fileOperation: TTFileOperation
 
     var session : URLSession {
         get {
@@ -49,7 +49,7 @@ public class DownloadManager: NSObject, Download {
     }
 }
 
-extension DownloadManager: URLSessionDelegate, URLSessionDownloadDelegate {
+extension TTDownloadManager: URLSessionDelegate, URLSessionDownloadDelegate {
     
     public func urlSession(_ session: URLSession, task: URLSessionTask, didCompleteWithError error: Error?) {
         if let error = error {

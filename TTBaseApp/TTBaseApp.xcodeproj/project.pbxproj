@@ -8,46 +8,64 @@
 
 /* Begin PBXBuildFile section */
 		B987B2C926EBA49C004291E5 /* TTBaseApp.h in Headers */ = {isa = PBXBuildFile; fileRef = B987B2C726EBA49C004291E5 /* TTBaseApp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B9D5AE2B26EDA46500BF10AA /* CommitConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE2A26EDA46500BF10AA /* CommitConfiguration.swift */; };
-		B9D5AE2D26EDA47300BF10AA /* SecurityControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE2C26EDA47300BF10AA /* SecurityControl.swift */; };
-		B9D5AE3426EDA4AF00BF10AA /* Dynamicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE3026EDA4AF00BF10AA /* Dynamicable.swift */; };
-		B9D5AE3526EDA4AF00BF10AA /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE3126EDA4AF00BF10AA /* Dynamic.swift */; };
-		B9D5AE3626EDA4AF00BF10AA /* Disposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE3226EDA4AF00BF10AA /* Disposable.swift */; };
-		B9D5AE3726EDA4AF00BF10AA /* Dependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE3326EDA4AF00BF10AA /* Dependency.swift */; };
+		B99DAB9327AA9E4100841788 /* TTDepartmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9027AA9E4100841788 /* TTDepartmentType.swift */; };
+		B99DAB9427AA9E4100841788 /* TTLocalizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9127AA9E4100841788 /* TTLocalizable.swift */; };
+		B99DAB9527AA9E4100841788 /* TTConfirmationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9227AA9E4100841788 /* TTConfirmationAlert.swift */; };
+		B99DAB9727AA9E5300841788 /* TTConstantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9627AA9E5300841788 /* TTConstantManager.swift */; };
+		B99DABAB27AA9E6000841788 /* TTBaseDateFormatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9827AA9E6000841788 /* TTBaseDateFormatType.swift */; };
+		B99DABAC27AA9E6000841788 /* TTUserRolePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9927AA9E6000841788 /* TTUserRolePermission.swift */; };
+		B99DABAD27AA9E6000841788 /* TTDownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9A27AA9E6000841788 /* TTDownloadManager.swift */; };
+		B99DABAE27AA9E6000841788 /* UIStoryboard+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9B27AA9E6000841788 /* UIStoryboard+Extensions.swift */; };
+		B99DABAF27AA9E6000841788 /* TTDisposable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9C27AA9E6000841788 /* TTDisposable.swift */; };
+		B99DABB027AA9E6000841788 /* TTBaseImageAssetManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9D27AA9E6000841788 /* TTBaseImageAssetManager.swift */; };
+		B99DABB127AA9E6000841788 /* TTFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9E27AA9E6000841788 /* TTFormatManager.swift */; };
+		B99DABB227AA9E6000841788 /* TTDependency.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DAB9F27AA9E6000841788 /* TTDependency.swift */; };
+		B99DABB327AA9E6000841788 /* TTDynamicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA027AA9E6000841788 /* TTDynamicable.swift */; };
+		B99DABB427AA9E6000841788 /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA127AA9E6000841788 /* UIImage+Extensions.swift */; };
+		B99DABB527AA9E6000841788 /* TTDateFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA227AA9E6000841788 /* TTDateFormatManager.swift */; };
+		B99DABB627AA9E6000841788 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA327AA9E6000841788 /* String+Extensions.swift */; };
+		B99DABB727AA9E6000841788 /* TTPersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA427AA9E6000841788 /* TTPersistentManager.swift */; };
+		B99DABB827AA9E6000841788 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA527AA9E6000841788 /* Date+Extensions.swift */; };
+		B99DABB927AA9E6000841788 /* UIColor+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA627AA9E6000841788 /* UIColor+Extensions.swift */; };
+		B99DABBA27AA9E6000841788 /* TTFileOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA727AA9E6000841788 /* TTFileOperationManager.swift */; };
+		B99DABBB27AA9E6000841788 /* TTLoggedUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA827AA9E6000841788 /* TTLoggedUser.swift */; };
+		B99DABBC27AA9E6000841788 /* TTDynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABA927AA9E6000841788 /* TTDynamic.swift */; };
+		B99DABBD27AA9E6000841788 /* TTSecurityControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B99DABAA27AA9E6000841788 /* TTSecurityControl.swift */; };
 		B9D5AE4426EDA4F800BF10AA /* NSObject+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4226EDA4F800BF10AA /* NSObject+Extensions.swift */; };
 		B9D5AE4526EDA4F800BF10AA /* UICollectionView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4326EDA4F800BF10AA /* UICollectionView+Extensions.swift */; };
 		B9D5AE4626EDA4F800BF10AA /* UITableView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4126EDA4F800BF10AA /* UITableView+Extensions.swift */; };
-		B9D5AE4C26EDA50500BF10AA /* FileOperationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4826EDA50400BF10AA /* FileOperationManager.swift */; };
-		B9D5AE4D26EDA50500BF10AA /* ConstantManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4926EDA50400BF10AA /* ConstantManager.swift */; };
-		B9D5AE4E26EDA50500BF10AA /* DateFormatManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4B26EDA50500BF10AA /* DateFormatManager.swift */; };
-		B9D5AE4F26EDA50500BF10AA /* PersistentManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4A26EDA50500BF10AA /* PersistentManager.swift */; };
-		B9D5AE5026EDA50500BF10AA /* DownloadManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE4726EDA50400BF10AA /* DownloadManager.swift */; };
-		B9D5AE5426EDA51000BF10AA /* ConfirmationAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE5326EDA51000BF10AA /* ConfirmationAlert.swift */; };
-		B9D5AE5526EDA51000BF10AA /* Localizable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE5226EDA51000BF10AA /* Localizable.swift */; };
-		B9D5AE5626EDA51000BF10AA /* DepartmentType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9D5AE5126EDA51000BF10AA /* DepartmentType.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B987B2C426EBA49C004291E5 /* TTBaseApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TTBaseApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B987B2C726EBA49C004291E5 /* TTBaseApp.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TTBaseApp.h; sourceTree = "<group>"; };
 		B987B2C826EBA49C004291E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B9D5AE2A26EDA46500BF10AA /* CommitConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommitConfiguration.swift; sourceTree = "<group>"; };
-		B9D5AE2C26EDA47300BF10AA /* SecurityControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityControl.swift; sourceTree = "<group>"; };
-		B9D5AE3026EDA4AF00BF10AA /* Dynamicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamicable.swift; sourceTree = "<group>"; };
-		B9D5AE3126EDA4AF00BF10AA /* Dynamic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
-		B9D5AE3226EDA4AF00BF10AA /* Disposable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Disposable.swift; sourceTree = "<group>"; };
-		B9D5AE3326EDA4AF00BF10AA /* Dependency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dependency.swift; sourceTree = "<group>"; };
+		B99DAB9027AA9E4100841788 /* TTDepartmentType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDepartmentType.swift; sourceTree = "<group>"; };
+		B99DAB9127AA9E4100841788 /* TTLocalizable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTLocalizable.swift; sourceTree = "<group>"; };
+		B99DAB9227AA9E4100841788 /* TTConfirmationAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTConfirmationAlert.swift; sourceTree = "<group>"; };
+		B99DAB9627AA9E5300841788 /* TTConstantManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTConstantManager.swift; sourceTree = "<group>"; };
+		B99DAB9827AA9E6000841788 /* TTBaseDateFormatType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTBaseDateFormatType.swift; sourceTree = "<group>"; };
+		B99DAB9927AA9E6000841788 /* TTUserRolePermission.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTUserRolePermission.swift; sourceTree = "<group>"; };
+		B99DAB9A27AA9E6000841788 /* TTDownloadManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDownloadManager.swift; sourceTree = "<group>"; };
+		B99DAB9B27AA9E6000841788 /* UIStoryboard+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Extensions.swift"; sourceTree = "<group>"; };
+		B99DAB9C27AA9E6000841788 /* TTDisposable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDisposable.swift; sourceTree = "<group>"; };
+		B99DAB9D27AA9E6000841788 /* TTBaseImageAssetManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTBaseImageAssetManager.swift; sourceTree = "<group>"; };
+		B99DAB9E27AA9E6000841788 /* TTFormatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTFormatManager.swift; sourceTree = "<group>"; };
+		B99DAB9F27AA9E6000841788 /* TTDependency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDependency.swift; sourceTree = "<group>"; };
+		B99DABA027AA9E6000841788 /* TTDynamicable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDynamicable.swift; sourceTree = "<group>"; };
+		B99DABA127AA9E6000841788 /* UIImage+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
+		B99DABA227AA9E6000841788 /* TTDateFormatManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDateFormatManager.swift; sourceTree = "<group>"; };
+		B99DABA327AA9E6000841788 /* String+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
+		B99DABA427AA9E6000841788 /* TTPersistentManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTPersistentManager.swift; sourceTree = "<group>"; };
+		B99DABA527AA9E6000841788 /* Date+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		B99DABA627AA9E6000841788 /* UIColor+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extensions.swift"; sourceTree = "<group>"; };
+		B99DABA727AA9E6000841788 /* TTFileOperationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTFileOperationManager.swift; sourceTree = "<group>"; };
+		B99DABA827AA9E6000841788 /* TTLoggedUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTLoggedUser.swift; sourceTree = "<group>"; };
+		B99DABA927AA9E6000841788 /* TTDynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTDynamic.swift; sourceTree = "<group>"; };
+		B99DABAA27AA9E6000841788 /* TTSecurityControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TTSecurityControl.swift; sourceTree = "<group>"; };
 		B9D5AE4126EDA4F800BF10AA /* UITableView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extensions.swift"; sourceTree = "<group>"; };
 		B9D5AE4226EDA4F800BF10AA /* NSObject+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Extensions.swift"; sourceTree = "<group>"; };
 		B9D5AE4326EDA4F800BF10AA /* UICollectionView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extensions.swift"; sourceTree = "<group>"; };
-		B9D5AE4726EDA50400BF10AA /* DownloadManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadManager.swift; sourceTree = "<group>"; };
-		B9D5AE4826EDA50400BF10AA /* FileOperationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileOperationManager.swift; sourceTree = "<group>"; };
-		B9D5AE4926EDA50400BF10AA /* ConstantManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConstantManager.swift; sourceTree = "<group>"; };
-		B9D5AE4A26EDA50500BF10AA /* PersistentManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentManager.swift; sourceTree = "<group>"; };
-		B9D5AE4B26EDA50500BF10AA /* DateFormatManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatManager.swift; sourceTree = "<group>"; };
-		B9D5AE5126EDA51000BF10AA /* DepartmentType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepartmentType.swift; sourceTree = "<group>"; };
-		B9D5AE5226EDA51000BF10AA /* Localizable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Localizable.swift; sourceTree = "<group>"; };
-		B9D5AE5326EDA51000BF10AA /* ConfirmationAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmationAlert.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +103,6 @@
 				B9D5AE3826EDA4CA00BF10AA /* Extensions */,
 				B9D5AE2F26EDA4A300BF10AA /* Dynamic */,
 				B9D5AE2E26EDA47D00BF10AA /* ControlProcess */,
-				B9D5AE2A26EDA46500BF10AA /* CommitConfiguration.swift */,
 				B987B2C726EBA49C004291E5 /* TTBaseApp.h */,
 				B987B2C826EBA49C004291E5 /* Info.plist */,
 			);
@@ -95,7 +112,7 @@
 		B9D5AE2E26EDA47D00BF10AA /* ControlProcess */ = {
 			isa = PBXGroup;
 			children = (
-				B9D5AE2C26EDA47300BF10AA /* SecurityControl.swift */,
+				B99DABAA27AA9E6000841788 /* TTSecurityControl.swift */,
 			);
 			name = ControlProcess;
 			sourceTree = "<group>";
@@ -103,10 +120,10 @@
 		B9D5AE2F26EDA4A300BF10AA /* Dynamic */ = {
 			isa = PBXGroup;
 			children = (
-				B9D5AE3226EDA4AF00BF10AA /* Disposable.swift */,
-				B9D5AE3126EDA4AF00BF10AA /* Dynamic.swift */,
-				B9D5AE3026EDA4AF00BF10AA /* Dynamicable.swift */,
-				B9D5AE3326EDA4AF00BF10AA /* Dependency.swift */,
+				B99DAB9F27AA9E6000841788 /* TTDependency.swift */,
+				B99DAB9C27AA9E6000841788 /* TTDisposable.swift */,
+				B99DABA927AA9E6000841788 /* TTDynamic.swift */,
+				B99DABA027AA9E6000841788 /* TTDynamicable.swift */,
 			);
 			name = Dynamic;
 			sourceTree = "<group>";
@@ -114,6 +131,11 @@
 		B9D5AE3826EDA4CA00BF10AA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				B99DABA527AA9E6000841788 /* Date+Extensions.swift */,
+				B99DABA327AA9E6000841788 /* String+Extensions.swift */,
+				B99DABA627AA9E6000841788 /* UIColor+Extensions.swift */,
+				B99DABA127AA9E6000841788 /* UIImage+Extensions.swift */,
+				B99DAB9B27AA9E6000841788 /* UIStoryboard+Extensions.swift */,
 				B9D5AE4226EDA4F800BF10AA /* NSObject+Extensions.swift */,
 				B9D5AE4326EDA4F800BF10AA /* UICollectionView+Extensions.swift */,
 				B9D5AE4126EDA4F800BF10AA /* UITableView+Extensions.swift */,
@@ -124,11 +146,11 @@
 		B9D5AE3926EDA4D200BF10AA /* Manager */ = {
 			isa = PBXGroup;
 			children = (
-				B9D5AE4926EDA50400BF10AA /* ConstantManager.swift */,
-				B9D5AE4B26EDA50500BF10AA /* DateFormatManager.swift */,
-				B9D5AE4726EDA50400BF10AA /* DownloadManager.swift */,
-				B9D5AE4826EDA50400BF10AA /* FileOperationManager.swift */,
-				B9D5AE4A26EDA50500BF10AA /* PersistentManager.swift */,
+				B99DAB9627AA9E5300841788 /* TTConstantManager.swift */,
+				B99DABA227AA9E6000841788 /* TTDateFormatManager.swift */,
+				B99DAB9A27AA9E6000841788 /* TTDownloadManager.swift */,
+				B99DABA727AA9E6000841788 /* TTFileOperationManager.swift */,
+				B99DABA427AA9E6000841788 /* TTPersistentManager.swift */,
 			);
 			name = Manager;
 			sourceTree = "<group>";
@@ -136,9 +158,14 @@
 		B9D5AE3A26EDA4DD00BF10AA /* Others */ = {
 			isa = PBXGroup;
 			children = (
-				B9D5AE5326EDA51000BF10AA /* ConfirmationAlert.swift */,
-				B9D5AE5126EDA51000BF10AA /* DepartmentType.swift */,
-				B9D5AE5226EDA51000BF10AA /* Localizable.swift */,
+				B99DAB9827AA9E6000841788 /* TTBaseDateFormatType.swift */,
+				B99DAB9D27AA9E6000841788 /* TTBaseImageAssetManager.swift */,
+				B99DAB9E27AA9E6000841788 /* TTFormatManager.swift */,
+				B99DABA827AA9E6000841788 /* TTLoggedUser.swift */,
+				B99DAB9927AA9E6000841788 /* TTUserRolePermission.swift */,
+				B99DAB9227AA9E4100841788 /* TTConfirmationAlert.swift */,
+				B99DAB9027AA9E4100841788 /* TTDepartmentType.swift */,
+				B99DAB9127AA9E4100841788 /* TTLocalizable.swift */,
 			);
 			name = Others;
 			sourceTree = "<group>";
@@ -221,23 +248,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B9D5AE5426EDA51000BF10AA /* ConfirmationAlert.swift in Sources */,
+				B99DABAC27AA9E6000841788 /* TTUserRolePermission.swift in Sources */,
+				B99DAB9727AA9E5300841788 /* TTConstantManager.swift in Sources */,
+				B99DABB527AA9E6000841788 /* TTDateFormatManager.swift in Sources */,
+				B99DABAB27AA9E6000841788 /* TTBaseDateFormatType.swift in Sources */,
 				B9D5AE4626EDA4F800BF10AA /* UITableView+Extensions.swift in Sources */,
-				B9D5AE3726EDA4AF00BF10AA /* Dependency.swift in Sources */,
-				B9D5AE2B26EDA46500BF10AA /* CommitConfiguration.swift in Sources */,
-				B9D5AE4C26EDA50500BF10AA /* FileOperationManager.swift in Sources */,
-				B9D5AE5626EDA51000BF10AA /* DepartmentType.swift in Sources */,
-				B9D5AE4E26EDA50500BF10AA /* DateFormatManager.swift in Sources */,
+				B99DABBA27AA9E6000841788 /* TTFileOperationManager.swift in Sources */,
+				B99DABAE27AA9E6000841788 /* UIStoryboard+Extensions.swift in Sources */,
+				B99DABB327AA9E6000841788 /* TTDynamicable.swift in Sources */,
+				B99DABB827AA9E6000841788 /* Date+Extensions.swift in Sources */,
+				B99DABB027AA9E6000841788 /* TTBaseImageAssetManager.swift in Sources */,
+				B99DABB927AA9E6000841788 /* UIColor+Extensions.swift in Sources */,
 				B9D5AE4426EDA4F800BF10AA /* NSObject+Extensions.swift in Sources */,
-				B9D5AE3526EDA4AF00BF10AA /* Dynamic.swift in Sources */,
+				B99DAB9427AA9E4100841788 /* TTLocalizable.swift in Sources */,
+				B99DABAD27AA9E6000841788 /* TTDownloadManager.swift in Sources */,
+				B99DABB127AA9E6000841788 /* TTFormatManager.swift in Sources */,
+				B99DABB727AA9E6000841788 /* TTPersistentManager.swift in Sources */,
 				B9D5AE4526EDA4F800BF10AA /* UICollectionView+Extensions.swift in Sources */,
-				B9D5AE4D26EDA50500BF10AA /* ConstantManager.swift in Sources */,
-				B9D5AE3626EDA4AF00BF10AA /* Disposable.swift in Sources */,
-				B9D5AE3426EDA4AF00BF10AA /* Dynamicable.swift in Sources */,
-				B9D5AE2D26EDA47300BF10AA /* SecurityControl.swift in Sources */,
-				B9D5AE4F26EDA50500BF10AA /* PersistentManager.swift in Sources */,
-				B9D5AE5526EDA51000BF10AA /* Localizable.swift in Sources */,
-				B9D5AE5026EDA50500BF10AA /* DownloadManager.swift in Sources */,
+				B99DAB9327AA9E4100841788 /* TTDepartmentType.swift in Sources */,
+				B99DABAF27AA9E6000841788 /* TTDisposable.swift in Sources */,
+				B99DABBD27AA9E6000841788 /* TTSecurityControl.swift in Sources */,
+				B99DAB9527AA9E4100841788 /* TTConfirmationAlert.swift in Sources */,
+				B99DABB627AA9E6000841788 /* String+Extensions.swift in Sources */,
+				B99DABBC27AA9E6000841788 /* TTDynamic.swift in Sources */,
+				B99DABBB27AA9E6000841788 /* TTLoggedUser.swift in Sources */,
+				B99DABB427AA9E6000841788 /* UIImage+Extensions.swift in Sources */,
+				B99DABB227AA9E6000841788 /* TTDependency.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,7 +418,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thy.TTBaseApp;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -408,7 +444,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 0.0.2;
+				MARKETING_VERSION = 0.0.4;
 				PRODUCT_BUNDLE_IDENTIFIER = com.thy.TTBaseApp;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

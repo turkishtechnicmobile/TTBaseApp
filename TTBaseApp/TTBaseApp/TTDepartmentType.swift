@@ -1,6 +1,6 @@
 //
 //  DepartmentType.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 13.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,10 +8,10 @@
 
 import Foundation
 
-public enum DepartmentType: Int {
+public enum TTDepartmentType: Int {
     case others = 0, airCraft, base, line, component, corporation
     
-    public static func department(by directorateID:String) -> DepartmentType {
+    public static func department(by directorateID:String) -> TTDepartmentType {
         switch directorateID {
         case "10011723": return .corporation// .CORPORATION  Olacak KURUMSAL COZUMLER MD. / MNG. | CORPORATIONAL SOLUTIONS
         case "10000784": return .airCraft // ESB UCAK BAKIM MUDURLUGU/ YUKLENICI

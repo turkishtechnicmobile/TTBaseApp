@@ -1,6 +1,6 @@
 //
 //  Persistent.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 13.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol Persistent: AnyObject {
+public protocol TTPersistent: AnyObject {
     var themeMode: Int { get set }
     var accessToken: String? { get set }
     var token: String? { get set }
@@ -20,7 +20,7 @@ public protocol Persistent: AnyObject {
     var fullName: String? { get set }
     var staffName: String? { get set }
     var department: String? { get set}
-    var departmentType: DepartmentType { get set }
+    var departmentType: TTDepartmentType { get set }
     var selectedAirplane: String? { get set }
     var selectedLocation: String? { get set }
     var acSeries: String? { get set }
@@ -40,8 +40,8 @@ public protocol Persistent: AnyObject {
     func logout()
 }
 
-open class PersistentManager: Persistent {
-    public static let shared = PersistentManager()
+open class TTPersistentManager: TTPersistent {
+    public static let shared = TTPersistentManager()
     
     
     public init() {
@@ -148,7 +148,7 @@ open class PersistentManager: Persistent {
         }
     }
     
-    public var departmentType = DepartmentType.base
+    public var departmentType = TTDepartmentType.base
     
     public var selectedAirplane: String? {
         get {
@@ -202,7 +202,7 @@ open class PersistentManager: Persistent {
     }
 }
 
-extension PersistentManager {
+extension TTPersistentManager {
     struct PersistentKeys {
         static let themeMode = "themeMode"
         static let accessToken = "accessToken"
@@ -221,7 +221,7 @@ extension PersistentManager {
     }
 }
 
-public extension PersistentManager {
+public extension TTPersistentManager {
     func getValue(forKey: String) -> Bool {
         return UserDefaults.standard.bool(forKey: forKey)
     }

@@ -1,6 +1,6 @@
 //
 //  FileOperationManager.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 17.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,13 +8,13 @@
 
 import Foundation
 
-public protocol FileOperation {
+public protocol TTFileOperation {
     func saveFile(for sourceUrl: URL, at location: URL) throws -> URL
 }
 
-public class FileOperationManager: FileOperation {
+public class TTFileOperationManager: TTFileOperation {
     
-    public static let shared = FileOperationManager()
+    public static let shared = TTFileOperationManager()
     
     // Get local file path: download task stores here.
     let documentsPath = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first!

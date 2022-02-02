@@ -1,6 +1,6 @@
 //
 //  Dynamic.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 13.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Dynamic<Value>: Disposable {
+public class TTDynamic<Value>: TTDisposable {
     public typealias Listener = (Value) -> ()
     public var listener: Listener?
     
@@ -29,13 +29,13 @@ public class Dynamic<Value>: Disposable {
     }
     
     @discardableResult
-    public func bind(_ listener: Listener?) -> Disposable {
+    public func bind(_ listener: Listener?) -> TTDisposable {
         self.listener = listener
         return self
     }
     
     @discardableResult
-    public func bindAndFire(_ listener: Listener?) -> Disposable {
+    public func bindAndFire(_ listener: Listener?) -> TTDisposable {
         self.listener = listener
         listener?(value)
         return self

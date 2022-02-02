@@ -1,6 +1,6 @@
 //
 //  DateFormatManager.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 12.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,14 +8,14 @@
 
 import Foundation
 
-public protocol DateFormat {
+public protocol TTDateFormat {
     var timeZone: TimeZone? { get }
     var timeZoneTR: TimeZone? { get }
     var currentDate: Date { get }
     var calender: Calendar { get }
     var apiDateFormatter: DateFormatter { get }
     var dateComponentFormatter: DateComponentsFormatter { get }
-    func format(date: Date, with option: FormatOption, timeZone formatType: TimeZoneFormat) -> String
+    func format(date: Date, with option: TTBaseDateFormatType, timeZone formatType: TimeZoneFormat) -> String
     func formatDifference(from: Date, to: Date) -> String?
     func hours(from date: Date) -> Int?
     func minutes(from date: Date) -> Int?
@@ -25,8 +25,8 @@ public protocol DateFormat {
     func extractSecond(from date: Date, with components: Set<Calendar.Component>) -> Date
 }
 
-public extension DateFormat {
-    func format(date: Date, with option: FormatOption = .onlyDate, timeZone formatType: TimeZoneFormat = .trax) -> String {
+public extension TTDateFormat {
+    func format(date: Date, with option: TTBaseDateFormatType = .onlyDate, timeZone formatType: TimeZoneFormat = .trax) -> String {
         return format(date: date, with: option, timeZone: formatType)
     }
     
@@ -35,9 +35,9 @@ public extension DateFormat {
     }
 }
 
-public class DateFormatManager: DateFormat {
+public class TTDateFormatManager: TTDateFormat {
     
-    public static let shared = DateFormatManager()
+    public static let shared = TTDateFormatManager()
     
     public let timeZone = TimeZone(secondsFromGMT: 0) // GTM +0:00
     public let timeZoneTR = TimeZone(secondsFromGMT: 60*60*3) // GTM +3:00
@@ -58,7 +58,7 @@ public class DateFormatManager: DateFormat {
     
     public lazy var apiDateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = FormatOption.api.rawValue
+        dateFormatter.dateFormat = TTBaseDateFormatType.api.rawValue
         dateFormatter.timeZone = timeZone
         dateFormatter.locale = locale
         return dateFormatter
@@ -72,7 +72,7 @@ public class DateFormatManager: DateFormat {
     }()
     
     /// Default format is onlyDate
-    public func format(date: Date, with option: FormatOption = .onlyDate, timeZone formatType: TimeZoneFormat = .trax) -> String {
+    public func format(date: Date, with option: TTBaseDateFormatType = .onlyDate, timeZone formatType: TimeZoneFormat = .trax) -> String {
         let timeZoneValue = formatType == .trax ? timeZone : timeZoneTR
         let localeValue = formatType == .trax ? locale : localeTR
         
@@ -83,7 +83,7 @@ public class DateFormatManager: DateFormat {
         return dateFormatter.string(from: date)
     }
     
-    public func date(from dateStr: String, with option: String = FormatOption.dateAndTime.rawValue, timeZone formatType: TimeZoneFormat = .trax) -> (Date?) {
+    public func date(from dateStr: String, with option: String = TTBaseDateFormatType.dateAndTime.rawValue, timeZone formatType: TimeZoneFormat = .trax) -> (Date?) {
         let timeZoneValue = formatType == .trax ? timeZone : timeZoneTR
         let localeValue = formatType == .trax ? locale : localeTR
         
@@ -134,13 +134,13 @@ public class DateFormatManager: DateFormat {
     }
 }
 
-public enum FormatOption: String {
-    case api = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
-    case dateAndTime = "dd.MM.yyyy HH:mm"
-    case onlyDate = "dd.MM.yyyy"
-    case onlyTime = "HH:mm"
-    case dateAndTimeAndSecond = "dd MMM yyyy HH:mm:ss"
-}
+//public enum FormatOption: String {
+//    case api = "yyyy'-'MM'-'dd'T'HH':'mm':'ss'Z'"
+//    case dateAndTime = "dd.MM.yyyy HH:mm"
+//    case onlyDate = "dd.MM.yyyy"
+//    case onlyTime = "HH:mm"
+//    case dateAndTimeAndSecond = "dd MMM yyyy HH:mm:ss"
+//}
 
 public enum TimeZoneFormat {
     case trax // GMT 0 : Zulu

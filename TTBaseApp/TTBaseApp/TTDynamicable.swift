@@ -1,6 +1,6 @@
 //
 //  Dynamicable.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 27.05.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -10,10 +10,10 @@ import Foundation
 
 @propertyWrapper
 //@dynamicMemberLookup
-public struct Dynamicable<Value> {
+public struct TTDynamicable<Value> {
     private let lock = NSLock()
     private var privateValue: Value
-    public var projectedValue: Dynamic<Value>
+    public var projectedValue: TTDynamic<Value>
     
     public var wrappedValue: Value {
         get {
@@ -25,7 +25,7 @@ public struct Dynamicable<Value> {
     }
     
     public init(wrappedValue: Value) {
-        projectedValue = Dynamic(wrappedValue)
+        projectedValue = TTDynamic(wrappedValue)
         self.privateValue = wrappedValue
     }
     

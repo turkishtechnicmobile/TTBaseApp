@@ -1,6 +1,6 @@
 //
 //  ConfirmationAlert.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 17.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-public protocol ConfirmationAlert {
+public protocol TTConfirmationAlert {
     var title: String? { get set }
     var message: String? { get set}
     var style: AlertStyle { get set }

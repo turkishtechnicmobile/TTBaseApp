@@ -1,6 +1,6 @@
 //
 //  Localizable.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 17.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,19 +8,19 @@
 
 import Foundation
 
-public protocol Localizable {
+public protocol TTLocalizable {
     var tableName: String { get }
     var localized: String { get }
 }
 
-public extension Localizable {
+public extension TTLocalizable {
     // default Localizable.strings file name
     var tableName: String {
         return "Localizable"
     }
 }
 
-public extension Localizable where Self: RawRepresentable, Self.RawValue == String {
+public extension TTLocalizable where Self: RawRepresentable, Self.RawValue == String {
     var localized: String {
         return rawValue.localized(tableName: tableName)
     }
@@ -34,7 +34,7 @@ extension String {
 }
 
 @propertyWrapper
-public struct Localized<Value> {
+public struct TTLocalized<Value> {
     
     public var wrappedValue: Value
     public var projectedValue: String {

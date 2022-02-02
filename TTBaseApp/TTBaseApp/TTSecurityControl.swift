@@ -1,6 +1,6 @@
 //
 //  SecurityControl.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by MnzfM on 12.02.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -9,9 +9,9 @@
 import Foundation
 import UIKit
 
-public class SecurityControl {
+public class TTSecurityControl {
     
-    public static let shared = SecurityControl()
+    public static let shared = TTSecurityControl()
     
     public func isReliableDevice () {
         

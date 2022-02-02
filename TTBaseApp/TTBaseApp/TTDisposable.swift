@@ -1,6 +1,6 @@
 //
 //  Disposable.swift
-//  TTBaseApp
+//  NMBaseApp
 //
 //  Created by Remzi YILDIRIM on 27.05.2020.
 //  Copyright © 2020 Turkish Technic. All rights reserved.
@@ -8,18 +8,18 @@
 
 import Foundation
 
-public protocol Disposable {
+public protocol TTDisposable {
     func dispose()
 }
 
-extension Disposable {
-    public func disposed(by bag: DisposeBag) {
+extension TTDisposable {
+    public func disposed(by bag: TTDisposeBag) {
         bag.store(self)
     }
 }
 
-final public class DisposeBag {
-    private var disposables = [Disposable]()
+final public class TTDisposeBag {
+    private var disposables = [TTDisposable]()
     
     deinit {
         self.dispose()
@@ -27,7 +27,7 @@ final public class DisposeBag {
     
     public init() {}
     
-    func store(_ disposable: Disposable) {
+    func store(_ disposable: TTDisposable) {
         disposables.append(disposable)
     }
     
@@ -37,9 +37,9 @@ final public class DisposeBag {
     }
 }
 
-public protocol Cancelable: Disposable { }
+public protocol TTCancelable: TTDisposable { }
 
-final public class AnyDisposable: Cancelable {
+final public class TTAnyDisposable: TTCancelable {
     typealias DisposeAction = () -> Void
     
     private var disposeAction: DisposeAction?
@@ -56,9 +56,9 @@ final public class AnyDisposable: Cancelable {
     }
 }
 
-public struct EmptyDisposable: Cancelable {
+public struct TTEmptyDisposable: TTCancelable {
  
-    static let empty = EmptyDisposable()
+    static let empty = TTEmptyDisposable()
     
     init() {
     }
@@ -68,14 +68,14 @@ public struct EmptyDisposable: Cancelable {
 }
 
 
-public struct Disposables {
+public struct TTDisposables {
     private init() {}
     
-    public static func create(with dispose: @escaping () -> Void) -> Cancelable {
-        return AnyDisposable(disposeAction: dispose)
+    public static func create(with dispose: @escaping () -> Void) -> TTCancelable {
+        return TTAnyDisposable(disposeAction: dispose)
     }
     
-    public static func create() -> Cancelable {
-        return EmptyDisposable.empty
+    public static func create() -> TTCancelable {
+        return TTEmptyDisposable.empty
     }
 }
